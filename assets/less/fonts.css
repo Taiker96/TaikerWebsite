@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/montserrat-regular/montserrat-regular.eot');
+  src: local('Montserrat Regular'), local('Montserrat Regular'), url('../fonts/montserrat-regular/montserrat-regular.eot') format('embedded-opentype'), url('../fonts/montserrat-regular/montserrat-regular.woff2') format('woff2'), url('../fonts/montserrat-regular/montserrat-regular.woff') format('woff'), url('../fonts/montserrat-regular/montserrat-regular.ttf') format('truetype'), url('../fonts/montserrat-regular/montserrat-regular.svg') format('svg');
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/montserrat-bold/montserrat-bold.eot');
+  src: local('Montserrat Bold'), local('Montserrat Bold'), url('../fonts/montserrat-bold/montserrat-bold.eot?') format('embedded-opentype'), url('../fonts/montserrat-bold/montserrat-bold.woff2') format('woff2'), url('../fonts/montserrat-bold/montserrat-bold.woff') format('woff'), url('../fonts/montserrat-bold/montserrat-bold.ttf') format('truetype'), url('../fonts/montserrat-bold/montserrat-bold.svg') format('svg');
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: semiBold;
+  font-style: normal;
+  src: url('../fonts/montserrat-semibold/montserrat-semibold.eot');
+  src: local('Montserrat SemiBold'), local('Montserrat SemiBold'), url('../fonts/montserrat-semibold/montserrat-semibold.eot?') format('embedded-opentype'), url('../fonts/montserrat-semibold/montserrat-semibold.woff2') format('woff2'), url('../fonts/montserrat-semibold/montserrat-semibold.woff') format('woff'), url('../fonts/montserrat-semibold/montserrat-semibold.ttf') format('truetype'), url('../fonts/montserrat-semibold/montserrat-semibold.svg') format('svg');
+}
+@font-face {
+  font-family: 'kiddi-icon';
+  src: url('../fonts/kiddi-icon/kiddi-icon.eot');
+  src: url('../fonts/kiddi-icon/kiddi-icon.eot') format('embedded-opentype'), url('../fonts/kiddi-icon/kiddi-icon.ttf') format('truetype'), url('../fonts/kiddi-icon/kiddi-icon.woff') format('woff'), url('../fonts/kiddi-icon/kiddi-icon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'kiddi-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-ios:before {
+  content: "\e906";
+}
+.icon-android:before {
+  content: "\e905";
+}
+.icon-angle-left:before {
+  content: "\e900";
+}
+.icon-angle-right:before {
+  content: "\e901";
+}
+.icon-youtube:before {
+  content: "\e904";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-play:before {
+  content: "\e903";
+}
