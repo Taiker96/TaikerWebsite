@@ -7,7 +7,6 @@ window.addEventListener("scroll", function () {
     } else {
         navbar.style.top = "0";
     }
-    // lastScrollTop = scrollTop;
 })
 
 //scroll
