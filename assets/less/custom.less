@@ -118,7 +118,7 @@ html {
   }
   @media (max-width: @screen-mobile) {
     background-position: 45% 0;
-    height: 110%;
+    height: 120%;
   }
   .left {
     margin-top: 150px;
@@ -290,6 +290,9 @@ html {
     border-radius: 20px;
     border: 2px solid white;
     animation: 2s lenxuong linear infinite;
+    @media (max-width: @screen-mobile) {
+      bottom: 6%;
+    }
     &:after {
       content: "";
       position: absolute;

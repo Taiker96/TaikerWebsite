@@ -1,7 +1,7 @@
-var lastScrollTop = 0;
-var navbar = document.querySelector('.topMenu');
+let lastScrollTop = 0;
+let navbar = document.querySelector('.topMenu');
 window.addEventListener("scroll", function () {
-    var scrollTop = window.pageTOffset || document.documentElement.scrollTop;
+    let scrollTop = document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         navbar.style.top = "-120px";
     } else {
