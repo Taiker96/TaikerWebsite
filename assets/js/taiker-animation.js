@@ -4,7 +4,7 @@ logomotion.add({
 	targets:'.art path',
 	strokeDashoffset:[anime.setDashoffset,0],
 	easing:'easeOutSine',
-	duration:3500,
+	duration:5000,
 	loop:true
 })
 //Image Animation
