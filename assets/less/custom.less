@@ -85,7 +85,7 @@ html {
           color: #000;
           transition: 0.2s;
           cursor: pointer !important;
-          &:hover{
+          &:hover {
             color: orange;
           }
           @media (max-width: @screen-tablet) {
@@ -118,7 +118,7 @@ html {
   }
   @media (max-width: @screen-mobile) {
     background-position: 45% 0;
-    height: 120%;
+    height: 130%;
   }
   .left {
     margin-top: 150px;
@@ -337,7 +337,7 @@ html {
   visibility: hidden;
   transition: 0.4s;
   transform: translateY(20px);
-  @media (max-width: @screen-mobile){
+  @media (max-width: @screen-mobile) {
     right: 0;
   }
   &.show {
@@ -424,7 +424,7 @@ html {
   bottom: 30px;
   right: 30px;
   z-index: 999;
-  @media (max-width: @screen-mobile){
+  @media (max-width: @screen-mobile) {
     right: 18px;
     bottom: 18px;
   }
@@ -504,14 +504,82 @@ html {
 
 // MY PROJECT
 .product {
-  background: url(./../images/bgden.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: radial-gradient(#333, #000);
+  overflow: hidden;
+  width: 100%;
   padding: 35px 0 50px 0;
   position: relative;
   height: 850px;
+  z-index: -2;
   @media (max-width: @screen-mobile) {
     height: auto;
+  }
+  .set {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    &.set2 {
+      transform: scale(1.5) rotateY(180deg);
+      filter: blur(2px);
+    }
+    &.set3 {
+      transform: scale(1) rotateX(180deg);
+      filter: blur(5px);
+    }
+    div {
+      position: absolute;
+      display: block;
+      @keyframes dichuyen {
+        0% {
+          opacity: 0;
+          top: -10%;
+          transform: translateX(-20px) rotate(0deg);
+        }
+        10% {
+          opacity: 1;
+        }
+        20% {
+          transform: translateX(-20px) rotate(45deg);
+        }
+        40% {
+          transform: translateX(-20px) rotate(90deg);
+        }
+        60% {
+          transform: translateX(-20px) rotate(135deg);
+        }
+        80% {
+          transform: translateX(-20px) rotate(180deg);
+        }
+        100% {
+          top: 110%;
+          transform: translateX(-20px) rotate(230deg);
+        }
+      }
+      &:nth-child(1) {
+        left: 20%;
+        animation: dichuyen 20s linear infinite;
+        animation-delay: -9s;
+      }
+      &:nth-child(2) {
+        left: 80%;
+        animation: dichuyen 21s linear infinite;
+        animation-delay: -8s;
+      }
+      &:nth-child(3) {
+        left: 50%;
+        animation: dichuyen 23s linear infinite;
+        animation-delay: -6s;
+      }
+      &:nth-child(4) {
+        left: 25%;
+        animation: dichuyen 22s linear infinite;
+        animation-delay: -7s;
+      }
+    }
   }
   .paint {
     position: relative;
@@ -671,7 +739,7 @@ html {
     right: 0;
     width: 34px;
     height: 34px;
-    background-color: #adadad3d;
+    background-color: #adadad5c;
   }
   a.carousel-control-prev {
     left: auto;
@@ -763,6 +831,7 @@ html {
       text-decoration: none;
       transition: 0.4s;
       color: orange;
+      font-size: 16px;
       &:hover {
         color: black;
       }
@@ -772,6 +841,13 @@ html {
     }
   }
   .circleLeft {
+    @media (max-width: @screen-tablet) and (min-width: @screen-mobile) {
+      margin-top: 52px;
+    }
+    @media (max-width: @screen-mobile) {
+      width: 80%;
+      margin: auto;
+    }
     &:hover .hoptien {
       opacity: 1;
     }
@@ -782,15 +858,22 @@ html {
       height: 100%;
       width: 100%;
       padding: 0 15px;
-      text-align: center;
-      line-height: 223px;
       border-radius: 50%;
-      font-size: 21px;
+      font-size: 18px;
       font-weight: bold;
       color: white;
       background-color: rgba(125, 125, 125, 0.6);
       opacity: 0;
       transition: 0.4s;
+      @media (max-width: @screen-mobile) {
+        font-size: 24px;
+      }
+      div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
@@ -834,12 +917,10 @@ html {
 
 //Footer
 .content-footer {
-  background: url(./../images/bg.jpg);
-  background-attachment: fixed;
+  background: url(./../images/bg.jpg) fixed;
   margin-top: 60px;
   height: 100%;
   width: 100%;
-  background-size: cover;
   color: #fff;
   @media (max-width: @screen-mobile) {
     background-position: 37% 0;
